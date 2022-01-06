@@ -1,0 +1,67 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: black;
+  border: 6px double beige;
+  outline: solid 2px beige;
+  border-radius: 60px;
+  /* margin: 20px; */
+  height: 550px;
+  width: 300px;
+}
+
+/* h1 {
+  display:flex;
+  justify-content: center; 
+  align-items: center;
+  color: beige;
+  font-size: 12px
+} */
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div * {
+  color: beige;
+  /* max-height: 150px; */
+}
+
+h3 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 24px;
+    /* border: 2px solid red; */
+    margin: 0px;
+    padding-top: 0px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 10px;
+}
+
+p {
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 6px;
+  font-size: 12px;
+  padding-top: 20px;
+  /* margin-left: 400px;
+    margin-right: 400px; */
+}
+
+.moon-image {
+
+  display:flex;
+  max-width: 150px;
+  /* padding-top: 500px; */
+
+}
