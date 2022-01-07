@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   mainDiv.classList.add('main-div');
   body.appendChild(mainDiv);
 
+  const cardBG = document.createElement('img');
+  cardBG.setAttribute('src', 'assets/bgTall.png');
+  cardBG.classList.add('card-bg');
+
   const moonImage = document.createElement('img');
   moonImage.classList.add('moon-image');
 
@@ -118,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     subContent.innerText = getHoroscope(phaseName.innerText);
     mainDiv.appendChild(subContent);
   }
+
   updatePage(rawDate);
   console.log(rawDate);
   
@@ -140,10 +145,13 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(rawDate);
     } 
   })
+  mainDiv.appendChild(cardBG);
   body.appendChild(mainDiv);
 
-const audio = new Audio('assets/Rone - Bye Bye Macadam.mp3');
-audio.loop = true;
-audio.play();
+  const audio = new Audio('assets/Rone - Bye Bye Macadam.mp3');
+  audio.loop = true;
 
+  body.addEventListener('click', () => {
+    audio.play();
+  });
 });

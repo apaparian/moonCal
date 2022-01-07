@@ -4,7 +4,9 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/bg_copy.png');
+    background-image: url('assets/space.gif');
+    background-size: 50%;
+    overflow-y: hidden;
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 }
 
 .main-div {
-    z-index: 1;
+    /* z-index: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +41,29 @@ body {
     border-radius: 40px;
     margin: 1px;
     padding: 40px;
-    background-image: url('assets/bg.png')
+    /* background-image: url('assets/bg.png'); */
 }
+
+.main-div > * {
+  z-index: 1;
+}
+
+.card-bg {
+  /* background-image: url('assets/bgTall.png'); */
+  /* border: 10px, solid, red; */
+  z-index: 0;
+  animation: fadeinout 4s linear;
+  animation-iteration-count: infinite;
+  position: fixed;
+}
+
+
+@keyframes fadeinout {
+  0% { opacity: .1; }
+  50% { opacity: 1; }
+  100% { opacity: .1; }
+}
+
 
 .main-div * {
   color: rgb(200, 200, 200);
